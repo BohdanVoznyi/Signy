@@ -1,0 +1,10 @@
+{% extends "TaskManager/base.html" %}
+{% load static %}
+
+{% block content %}
+    {% for task in tasks %}
+        <h1 class="kk">{{ task.title }}</h1>
+        <p>{{ task.text }}</p>
+    {% endfor %}
+{% endblock %}
+

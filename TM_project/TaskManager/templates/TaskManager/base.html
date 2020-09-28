@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Signy</title>
+    {% endif %}
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+
+       <!--  Navbar -->
+        <nav class="header__nav">
+            <div class="nav__logo">
+                <div class="nav__logo">Signy<span class="nav__dot">.</span></div>
+            </div>
+            <div class="nav__links">
+                <a href="" class="nav__link">Home</a>
+                <a href="" class="nav__link">About</a>
+                <a href="" class="nav__link">Tasks</a>
+                <a href="" class="nav__link">Notes</a>
+                <a href="" class="nav__link">Community</a>
+            </div>
+            <div class="nav__buttons">
+                <img src="{% static 'images/profile-icon.svg' %}" alt="" class="buttons__img">
+                <div class="buttons__profile">Profile</div>
+                <div class="buttons__logout">Logout</div>
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* Header
+==================*/
+
+
+/* Nav
+==================*/
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.nav__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* nav__logo
+==================*/
+.nav__logo {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nav__dot {
+    color: red;
+}
+
+
+/* nav__links
+==================*/
+.nav__link {
+    position: relative;
+    margin-right: 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #000;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover:after {
+    opacity: .8;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.buttons__img {
+    margin-right: 10px;
+
+    height: 25px;
+    width: 25px;
+}
+
+.buttons__profile {
+    margin-right: 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #000;
+}
+
+.buttons__logout {
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
